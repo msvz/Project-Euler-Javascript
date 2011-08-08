@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 var sum=0;
 for(var i=0; i < 1000 ; i++){
-    if (i%3===0 || i%5===0){
+    if ( i%3 === 0 || i%5 === 0 ){
 	sum += i;
     }
 }
@@ -29,6 +29,17 @@ function sumDivisibleBy5(n){
 	var lastNum = Math.floor(n/5);
 	return (5 * lastNum * (lastNum + 1) )/ 2;
 }
+
+/*
+GCD : 
+for (i = Math.min(a,b); i>=0; i--) { 
+   if ( a%i ===0 &&  b%i ===0) {
+      return i; 
+   }
+}	
+10, 25 :  25 = 10 * 2 + 5 ;
+10, 5  :  10 =  5 *  2 + 0 ;  
+*/
 
 function euclidGCD(a, b){ 
     if( a === 0 ) {

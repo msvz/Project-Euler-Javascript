@@ -4,8 +4,7 @@ The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor
 */ 
 
 function sqrt_root(N) {
-  var oldguess = -1,
-			guess = 1;	
+  var oldguess = -1, guess = 1;	
   while(Math.abs(guess - oldguess) > 1) { // Take avg of N and N/R till both converge
 	oldguess = guess;
 	guess = (guess + N/guess) / 2;		

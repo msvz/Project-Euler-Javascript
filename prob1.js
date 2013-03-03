@@ -41,6 +41,15 @@ for (i = Math.min(a,b); i>=0; i--) {
 10, 5  :  10 =  5 *  2 + 0 ;  
 */
 
+/*
+gcd(25,10)
+
+25 > 10 : euclidGCD(10, 5)
+10 > 5 : euclidGCD(5, 0)
+
+7 > 3 : euclidGCD(3, 1)
+3 > 1 : euclidGCD(1, 0) 
+*/
 function euclidGCD(a, b){ 
     if( a === 0 ) {
 	return b;
